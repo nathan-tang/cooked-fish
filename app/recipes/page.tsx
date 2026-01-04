@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Header } from "@/components/Header";
 import { SearchBar } from "@/components/SearchBar";
@@ -16,7 +16,7 @@ import {
 } from "@/lib/recipeUtils";
 import { RecipeFilters } from "@/lib/data/types";
 
-export default function RecipesPage() {
+function RecipesContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
 
@@ -158,5 +158,25 @@ export default function RecipesPage() {
         </div>
       </footer>
     </div>
+  );
+}
+
+export default function RecipesPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-gray-50">
+          <Header />
+          <div className="flex items-center justify-center py-20">
+            <div className="text-center">
+              <div className="text-6xl mb-4">🐟</div>
+              <p className="text-gray-600">Loading recipes...</p>
+            </div>
+          </div>
+        </div>
+      }
+    >
+      <RecipesContent />
+    </Suspense>
   );
 }
