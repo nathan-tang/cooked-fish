@@ -30,7 +30,8 @@ export default function Home() {
 
           <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
             From salmon to sardines, barramundi to branzino. Every fish, every
-            method, every recipe. The future of fish recipes online.
+            method, every recipe. No shellfish, no life stories, no bait and
+            switch.
           </p>
 
           {/* Hero Search */}
@@ -65,12 +66,12 @@ export default function Home() {
             Our Mission
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            We believe every fish deserves to be cooked to perfection. Whether
-            you caught a wahoo off the coast of Hawaii, picked up some walleye
+            We believe every fish deserves its moment in the pan. Whether you
+            reeled in a wahoo off the coast of Hawaii, picked up some walleye
             from the market, or want to try cooking John Dory for the first
             time, cooked.fish has you covered. We're building the most
-            comprehensive, searchable, and useful database of cooked fish
-            recipes on the internet.
+            comprehensive, searchable, and useful database of fish recipes on
+            the internet. Just fish. No shellfish, no filler, no fluff.
           </p>
         </div>
       </section>
@@ -156,6 +157,9 @@ export default function Home() {
             <div className="flex gap-6">
               <Link href="/recipes" className="hover:text-white transition-colors">
                 Browse
+              </Link>
+              <Link href="/faq" className="hover:text-white transition-colors">
+                FAQ
               </Link>
               <Link href="/about" className="hover:text-white transition-colors">
                 About

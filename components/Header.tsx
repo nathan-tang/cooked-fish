@@ -16,7 +16,7 @@ export function Header() {
                 cooked.fish
               </h1>
               <p className="text-xs text-gray-500 -mt-1">
-                The World's Largest Database of Cooked Fish Recipes
+                Hooked on Fish Recipes
               </p>
             </div>
           </Link>

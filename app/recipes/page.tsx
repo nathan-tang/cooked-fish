@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import { Header } from "@/components/Header";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterBar } from "@/components/FilterBar";
@@ -150,6 +151,17 @@ function RecipesContent() {
                 </span>
               </div>
               <p className="text-sm">The future of fish recipes online</p>
+            </div>
+            <div className="flex gap-6">
+              <Link href="/recipes" className="hover:text-white transition-colors">
+                Browse
+              </Link>
+              <Link href="/faq" className="hover:text-white transition-colors">
+                FAQ
+              </Link>
+              <Link href="/about" className="hover:text-white transition-colors">
+                About
+              </Link>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
