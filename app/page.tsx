@@ -104,7 +104,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold mb-2">30+</div>
+              <div className="text-5xl font-bold mb-2">36+</div>
               <div className="text-blue-100 text-lg">Recipes</div>
             </div>
             <div>
@@ -112,7 +112,7 @@ export default function Home() {
               <div className="text-blue-100 text-lg">Fish Types</div>
             </div>
             <div>
-              <div className="text-5xl font-bold mb-2">8</div>
+              <div className="text-5xl font-bold mb-2">9</div>
               <div className="text-blue-100 text-lg">Cooking Methods</div>
             </div>
           </div>

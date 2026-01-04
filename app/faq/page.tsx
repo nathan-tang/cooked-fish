@@ -25,6 +25,11 @@ const faqs: FAQItem[] = [
       "No. Shellfish (crustaceans and mollusks) are fundamentally different from fish in biological classification, preparation techniques, and culinary applications. This site is dedicated to fish only. We know scallops are delicious. We know shrimp are versatile. The answer is still no. If you're looking for lobster, shrimp, crab, clams, mussels, oysters, or scallops, there are many excellent resources elsewhere.",
   },
   {
+    question: "Do you include fish soups and chowders?",
+    answer:
+      "Yes! As long as fish is the only animal protein throwing the party. Bouillabaisse? Absolutely. New England fish chowder? You bet. Tom yum pla? Of course. But the second a clam tries to crash the party, it's off the site. No clam chowder. No surf-and-turf stew. No \"I'll just add some shrimp for extra flavor.\" Fish soups are in. Mixed seafood identity crises are out. If it swims with fins and stars in the soup, we're cooking.",
+  },
+  {
     question: "Is this a joke?",
     answer:
       "No. This is a serious fish recipe database. The name is memorable and the domain extension is appropriate. We are committed to providing accurate, useful recipes for cooking fish.",
