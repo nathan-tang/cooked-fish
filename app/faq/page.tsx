@@ -27,7 +27,12 @@ const faqs: FAQItem[] = [
   {
     question: "Do you include fish soups and chowders?",
     answer:
-      "Yes! As long as fish is the only animal protein throwing the party. Bouillabaisse? Absolutely. New England fish chowder? You bet. Tom yum pla? Of course. But the second a clam tries to crash the party, it's off the site. No clam chowder. No surf-and-turf stew. No \"I'll just add some shrimp for extra flavor.\" Fish soups are in. Mixed seafood identity crises are out. If it swims with fins and stars in the soup, we're cooking.",
+      "Yes! As long as fish is the star of the dish. Bouillabaisse? Absolutely. New England fish chowder with bacon? You bet. Tom yum pla? Of course. But the second a clam, shrimp, or lobster tries to crash the party, it's off the site. No clam chowder. No surf-and-turf stew. No \"mixed seafood\" cop-outs. Fish soups are in. Shellfish identity crises are out. If it swims with fins and stars in the soup, we're cooking.",
+  },
+  {
+    question: "What about recipes with bacon, pancetta, or other meat as a supporting ingredient?",
+    answer:
+      "As long as fish is the star of the dish, we're fine with supporting ingredients that add flavor. Bacon-wrapped trout? Great. Pan-seared halibut with crispy pancetta? Perfect. Cod chowder with bacon? Delicious. The rule is simple: fish must be the main protein and the centerpiece of the recipe. We're not making bacon-wrapped scallops (shellfish), chicken with a side of fish (chicken is the star), or surf-and-turf (two equal proteins). But if you're using bacon to add smoky depth to a fish dish where fish is clearly the hero, that's cooking smart, not breaking rules.",
   },
   {
     question: "Is this a joke?",
