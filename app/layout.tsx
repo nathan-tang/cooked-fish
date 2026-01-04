@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "cooked.fish - The World's Largest Database of Cooked Fish Recipes",
+    default: "cooked.fish - Your Comprehensive Guide to Cooked Fish Recipes",
     template: "%s | cooked.fish",
   },
   description:
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://cooked.fish",
     siteName: "cooked.fish",
-    title: "cooked.fish - The World's Largest Database of Cooked Fish Recipes",
+    title: "cooked.fish - Your Comprehensive Guide to Cooked Fish Recipes",
     description:
       "The future of fish recipes online. Find recipes for any fish - from salmon to sardines, barramundi to branzino.",
     images: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "cooked.fish - The World's Largest Database of Cooked Fish Recipes",
+    title: "cooked.fish - Your Comprehensive Guide to Cooked Fish Recipes",
     description:
       "The future of fish recipes online. Find recipes for any fish.",
     images: ["/og-image.png"],

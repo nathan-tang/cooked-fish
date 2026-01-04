@@ -23,14 +23,14 @@ export default function Home() {
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            The World's Largest Database
+            Your Comprehensive Guide
             <br />
-            of Cooked Fish Recipes
+            to Cooked Fish Recipes
           </h1>
 
           <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            From salmon to sardines, barramundi to branzino. If it swims and can
-            be cooked, we have a recipe for it.
+            From salmon to sardines, barramundi to branzino. Every fish, every
+            method, every recipe. The future of fish recipes online.
           </p>
 
           {/* Hero Search */}
