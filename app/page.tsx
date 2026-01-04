@@ -60,58 +60,6 @@ export default function Home() {
         <AdSlot slot="header" />
       </div>
 
-      {/* NO SHELLFISH Declaration */}
-      <section className="py-16 bg-white border-y-4 border-red-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <div className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-2xl mb-4">
-              🚫 ABSOLUTELY NO SHELLFISH 🚫
-            </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Fish Only. We're Not Kidding.
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-green-50 border-2 border-green-600 rounded-lg p-6">
-              <div className="text-3xl mb-2">✅</div>
-              <h3 className="font-bold text-green-900 mb-2 text-lg">
-                ALLOWED (Fish)
-              </h3>
-              <p className="text-sm text-green-800">
-                Salmon · Tuna · Catfish · Branzino · Sardines · Mackerel ·
-                Halibut · Cod · Trout · Snapper · Literally any fish with fins
-              </p>
-            </div>
-
-            <div className="bg-red-50 border-2 border-red-600 rounded-lg p-6">
-              <div className="text-3xl mb-2">❌</div>
-              <h3 className="font-bold text-red-900 mb-2 text-lg">
-                BANNED FOREVER (Shellfish)
-              </h3>
-              <p className="text-sm text-red-800">
-                Shrimp · Lobster · Crab · Scallops · Clams · Mussels · Oysters
-                · Crawfish · Don't even ask about octopus
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-gray-50 rounded-lg p-6 text-center">
-            <p className="text-lg text-gray-700 font-medium mb-2">
-              "But what about bacon-wrapped scallops?"
-            </p>
-            <p className="text-2xl font-bold text-gray-900">NO.</p>
-            <p className="text-sm text-gray-600 mt-2">
-              (Bacon-wrapped trout? YES. Fish is the star. Read the{" "}
-              <Link href="/faq" className="text-blue-600 hover:underline">
-                FAQ
-              </Link>
-              .)
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Recipes */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
