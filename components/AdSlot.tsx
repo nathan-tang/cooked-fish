@@ -23,9 +23,9 @@ export function AdSlot({ slot, className = "" }: AdSlotProps) {
   return (
     <div className={`${className}`}>
       <div
-        className={`bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center ${dimensions[slot]} mx-auto`}
+        className={`bg-stone-100/50 border border-stone-300/60 rounded-xl flex items-center justify-center ${dimensions[slot]} mx-auto`}
       >
-        <div className="text-center text-gray-400 text-sm">
+        <div className="text-center text-stone-400 text-sm">
           <div className="font-medium">Ad Space</div>
           <div className="text-xs mt-1">{adDimensions[slot]}</div>
         </div>

@@ -28,10 +28,10 @@ export function HeroSearch() {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Search any fish... (salmon, tuna, barramundi, etc.)"
-          className="w-full px-5 py-4 pl-12 text-lg text-gray-900 border-2 border-white/30 bg-white/95 rounded-lg focus:border-white focus:bg-white focus:outline-none transition-colors placeholder-gray-500"
+          className="w-full px-5 py-4 pl-12 text-lg text-stone-900 border-2 border-white/30 bg-white/95 rounded-xl focus:border-white focus:bg-white focus:outline-none transition-colors placeholder-stone-400 shadow-lg"
         />
         <svg
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-gray-400"
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-stone-400"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ export function HeroSearch() {
         {query && (
           <button
             onClick={() => setQuery("")}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path
@@ -58,7 +58,7 @@ export function HeroSearch() {
           </button>
         )}
       </div>
-      <p className="text-sm text-blue-100 mt-2 text-center">
+      <p className="text-sm text-orange-100 mt-2 text-center">
         Press Enter to search
       </p>
     </div>

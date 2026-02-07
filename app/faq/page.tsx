@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -126,7 +127,7 @@ export default function FAQPage() {
   const schema = generateFAQSchema(faqs);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-stone-50">
       <Header />
 
       {/* JSON-LD Schema */}
@@ -136,12 +137,12 @@ export default function FAQPage() {
       />
 
       {/* Page Header */}
-      <div className="bg-white border-b border-gray-200 py-12">
+      <div className="bg-white border-b border-stone-200 py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-stone-900 mb-4">
             Frequently Asked Questions
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-stone-600">
             Everything you need to know about cooked.fish
           </p>
         </div>
@@ -151,33 +152,33 @@ export default function FAQPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="space-y-8">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-sm p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-3">
+            <div key={index} className="bg-white rounded-xl shadow-sm border border-stone-200/60 p-6 hover:border-orange-200 transition-colors">
+              <h2 className="text-xl font-semibold text-stone-900 mb-3">
                 {faq.question}
               </h2>
-              <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+              <p className="text-stone-700 leading-relaxed">{faq.answer}</p>
             </div>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 bg-blue-600 rounded-lg p-8 text-center text-white">
+        <div className="mt-16 bg-gradient-to-br from-orange-600 to-amber-700 rounded-xl p-8 text-center text-white">
           <h2 className="text-2xl font-bold mb-4">
             Still have questions?
           </h2>
-          <p className="text-blue-100 mb-6">
+          <p className="text-orange-100 mb-6">
             Explore our recipes or learn more about our mission.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/recipes"
-              className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+              className="px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-colors"
             >
               Browse Recipes
             </Link>
             <Link
               href="/about"
-              className="px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors border-2 border-white"
+              className="px-6 py-3 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border-2 border-white/40"
             >
               About Us
             </Link>
@@ -185,42 +186,7 @@ export default function FAQPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="flex items-center gap-1">
-                  <span className="text-xl">🐟</span>
-                  <span className="text-xl">🔥</span>
-                </div>
-                <span className="text-white font-bold text-xl">
-                  cooked.fish
-                </span>
-              </div>
-              <p className="text-sm">The future of fish recipes online</p>
-            </div>
-            <div className="flex gap-6">
-              <Link
-                href="/recipes"
-                className="hover:text-white transition-colors"
-              >
-                Browse
-              </Link>
-              <Link href="/faq" className="hover:text-white transition-colors">
-                FAQ
-              </Link>
-              <Link href="/about" className="hover:text-white transition-colors">
-                About
-              </Link>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
-            © 2026 cooked.fish. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

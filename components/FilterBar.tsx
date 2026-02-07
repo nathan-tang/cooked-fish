@@ -27,7 +27,7 @@ export function FilterBar({
   };
 
   return (
-    <div className="w-full bg-white border-b border-gray-200 py-4">
+    <div className="w-full bg-white border-b border-stone-200 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Fish Type - Searchable */}
@@ -72,47 +72,47 @@ export function FilterBar({
           filters.cuisine ||
           filters.difficulty) && (
           <div className="flex items-center gap-2 mt-4">
-            <span className="text-sm text-gray-600">Active filters:</span>
+            <span className="text-sm text-stone-600">Active filters:</span>
             <div className="flex flex-wrap gap-2">
               {filters.fishType && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full capitalize">
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full capitalize">
                   {filters.fishType}
                   <button
                     onClick={() => updateFilter("fishType", undefined)}
-                    className="hover:text-blue-900"
+                    className="hover:text-orange-900"
                   >
                     ×
                   </button>
                 </span>
               )}
               {filters.cookingMethod && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full capitalize">
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full capitalize">
                   {filters.cookingMethod}
                   <button
                     onClick={() => updateFilter("cookingMethod", undefined)}
-                    className="hover:text-blue-900"
+                    className="hover:text-orange-900"
                   >
                     ×
                   </button>
                 </span>
               )}
               {filters.cuisine && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">
                   {filters.cuisine}
                   <button
                     onClick={() => updateFilter("cuisine", undefined)}
-                    className="hover:text-blue-900"
+                    className="hover:text-orange-900"
                   >
                     ×
                   </button>
                 </span>
               )}
               {filters.difficulty && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full capitalize">
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full capitalize">
                   {filters.difficulty}
                   <button
                     onClick={() => updateFilter("difficulty", undefined)}
-                    className="hover:text-blue-900"
+                    className="hover:text-orange-900"
                   >
                     ×
                   </button>
@@ -127,7 +127,7 @@ export function FilterBar({
                     difficulty: undefined,
                   })
                 }
-                className="text-sm text-blue-600 hover:text-blue-800 underline"
+                className="text-sm text-orange-600 hover:text-orange-800 underline"
               >
                 Clear all
               </button>

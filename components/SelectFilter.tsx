@@ -58,19 +58,19 @@ export function SelectFilter({
 
   return (
     <div ref={containerRef} className="relative">
-      <label className="block text-sm font-medium text-gray-700 mb-1.5">
+      <label className="block text-sm font-medium text-stone-700 mb-1.5">
         {label}
       </label>
 
       {/* Display selected value or button */}
       {value ? (
         <div className="flex items-center gap-2">
-          <div className="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-white text-sm capitalize">
+          <div className="flex-1 px-3 py-2 border border-stone-300 rounded-md bg-white text-sm capitalize">
             {value}
           </div>
           <button
             onClick={handleClear}
-            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
+            className="px-3 py-2 text-sm text-stone-600 hover:text-stone-800 border border-stone-300 rounded-md hover:bg-stone-50"
           >
             Clear
           </button>
@@ -78,11 +78,11 @@ export function SelectFilter({
       ) : (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full px-3 py-2 text-left border border-gray-300 rounded-md bg-white hover:bg-gray-50 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none text-sm text-gray-700 flex items-center justify-between"
+          className="w-full px-3 py-2 text-left border border-stone-300 rounded-md bg-white hover:bg-stone-50 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none text-sm text-stone-700 flex items-center justify-between"
         >
           <span>{placeholder}</span>
           <svg
-            className={`w-4 h-4 text-gray-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
+            className={`w-4 h-4 text-stone-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -99,15 +99,15 @@ export function SelectFilter({
 
       {/* Dropdown */}
       {isOpen && !value && (
-        <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+        <div className="absolute z-50 w-full mt-1 bg-white border border-stone-300 rounded-md shadow-lg max-h-60 overflow-auto">
           {searchable && (
-            <div className="p-2 border-b border-gray-200">
+            <div className="p-2 border-b border-stone-200">
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={`Search ${label.toLowerCase()}...`}
-                className="w-full px-2 py-1 border border-gray-300 rounded text-sm text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none"
+                className="w-full px-2 py-1 border border-stone-300 rounded text-sm text-stone-900 placeholder-stone-500 focus:border-orange-500 focus:outline-none"
                 autoFocus
               />
             </div>
@@ -119,7 +119,7 @@ export function SelectFilter({
               setIsOpen(false);
               setSearchQuery("");
             }}
-            className="w-full px-3 py-2 text-left text-sm hover:bg-blue-50 border-b border-gray-200 font-medium text-gray-600"
+            className="w-full px-3 py-2 text-left text-sm hover:bg-orange-50 border-b border-stone-200 font-medium text-stone-600"
           >
             {placeholder}
           </button>
@@ -129,13 +129,13 @@ export function SelectFilter({
               <button
                 key={option}
                 onClick={() => handleSelect(option)}
-                className="w-full px-3 py-2 text-left text-sm hover:bg-blue-50 transition-colors capitalize"
+                className="w-full px-3 py-2 text-left text-sm hover:bg-orange-50 transition-colors capitalize"
               >
                 {option}
               </button>
             ))
           ) : (
-            <div className="px-3 py-2 text-sm text-gray-500">
+            <div className="px-3 py-2 text-sm text-stone-500">
               No options found
             </div>
           )}

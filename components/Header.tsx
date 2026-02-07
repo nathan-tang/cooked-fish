@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -12,10 +12,10 @@ export function Header() {
               <span className="text-2xl">🔥</span>
             </div>
             <div className="flex flex-col">
-              <h1 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+              <h1 className="text-2xl font-bold text-stone-900 group-hover:text-orange-600 transition-colors">
                 cooked.fish
               </h1>
-              <p className="text-xs text-gray-500 -mt-1">
+              <p className="text-xs text-stone-500 -mt-1">
                 Hooked on Fish Recipes
               </p>
             </div>
@@ -25,20 +25,20 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="/recipes"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className="text-stone-700 hover:text-orange-600 font-medium transition-colors"
             >
               Browse Recipes
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className="text-stone-700 hover:text-orange-600 font-medium transition-colors"
             >
               About
             </Link>
           </nav>
 
           {/* Mobile menu button */}
-          <button className="md:hidden p-2 text-gray-700">
+          <button className="md:hidden p-2 text-stone-700">
             <svg
               className="w-6 h-6"
               fill="none"

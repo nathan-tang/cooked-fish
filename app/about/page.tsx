@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { WaveDivider } from "@/components/WaveDivider";
+import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,12 +12,16 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-stone-50">
       <Header />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative bg-gradient-to-br from-orange-600 via-amber-700 to-orange-900 text-white py-16 overflow-hidden">
+        {/* Decorative blurred circles */}
+        <div className="absolute top-10 left-10 w-72 h-72 bg-orange-400/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl" />
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-3">
               <span className="text-6xl">🐟</span>
@@ -25,21 +31,24 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Every Fish Deserves Its Moment in the Pan
           </h1>
-          <p className="text-xl text-blue-100">
+          <p className="text-xl text-orange-100">
             We're building the most comprehensive, searchable database of fish
             recipes on the internet. No bait and switch.
           </p>
         </div>
       </div>
 
+      {/* Wave Divider */}
+      <WaveDivider color="#fafaf9" />
+
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* What We Do */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-stone-900 mb-6">
             What We Do
           </h2>
-          <div className="prose prose-lg text-gray-700 space-y-4">
+          <div className="prose prose-lg text-stone-700 space-y-4">
             <p>
               cooked.fish is a comprehensive database of fish recipes. Whether
               you caught a wahoo off the coast of Hawaii, picked up some walleye
@@ -55,11 +64,11 @@ export default function AboutPage() {
         </section>
 
         {/* Why Fish Only */}
-        <section className="mb-16 bg-white rounded-lg p-8 shadow-sm">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        <section className="mb-16 bg-white rounded-xl p-8 shadow-sm border border-stone-200/60">
+          <h2 className="text-3xl font-bold text-stone-900 mb-6">
             Why Fish Only?
           </h2>
-          <div className="prose prose-lg text-gray-700 space-y-4">
+          <div className="prose prose-lg text-stone-700 space-y-4">
             <p>
               Fish is a distinct category of aquatic protein. It has unique
               characteristics, cooking methods, nutritional profiles, and
@@ -70,7 +79,7 @@ export default function AboutPage() {
               specialized content that serves this specific need better than
               generalized seafood sites.
             </p>
-            <p className="font-semibold text-gray-900">
+            <p className="font-semibold text-stone-900">
               This means no shellfish. No crustaceans. No mollusks. No lobster,
               shrimp, crab, clams, mussels, oysters, or scallops.
             </p>
@@ -84,45 +93,45 @@ export default function AboutPage() {
 
         {/* What Makes Us Different */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-stone-900 mb-6">
             What Makes Us Different
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-stone-200/60">
+              <h3 className="text-xl font-semibold text-stone-900 mb-3">
                 Comprehensive Coverage
               </h3>
-              <p className="text-gray-700">
+              <p className="text-stone-700">
                 From common fish like salmon and cod to rare varieties like
                 barramundi and Arctic char, we're building recipes for every
                 edible fish species.
               </p>
             </div>
-            <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-stone-200/60">
+              <h3 className="text-xl font-semibold text-stone-900 mb-3">
                 Fast & Functional
               </h3>
-              <p className="text-gray-700">
+              <p className="text-stone-700">
                 No bloated frameworks, no autoplaying videos, no essay about how
                 your grandmother caught this fish in 1987. Just fast, searchable,
                 functional recipe content. We respect your time and your hunger.
               </p>
             </div>
-            <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-stone-200/60">
+              <h3 className="text-xl font-semibold text-stone-900 mb-3">
                 Smart Search
               </h3>
-              <p className="text-gray-700">
+              <p className="text-stone-700">
                 Fuzzy search that understands variations in fish names. Filter
                 by cooking method, cuisine, difficulty, or just search by fish
                 type.
               </p>
             </div>
-            <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-stone-200/60">
+              <h3 className="text-xl font-semibold text-stone-900 mb-3">
                 No Nonsense
               </h3>
-              <p className="text-gray-700">
+              <p className="text-stone-700">
                 Tested recipes with clear instructions. No affiliate links
                 disguised as recommendations. No unnecessary complexity.
               </p>
@@ -131,9 +140,9 @@ export default function AboutPage() {
         </section>
 
         {/* The Vision */}
-        <section className="mb-16 bg-blue-50 rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">The Vision</h2>
-          <div className="prose prose-lg text-gray-700 space-y-4">
+        <section className="mb-16 bg-orange-50 rounded-xl p-8">
+          <h2 className="text-3xl font-bold text-stone-900 mb-6">The Vision</h2>
+          <div className="prose prose-lg text-stone-700 space-y-4">
             <p>
               We believe that if you have a fish and want to cook it, you should
               be able to find a good recipe in seconds. Not after scrolling past
@@ -151,7 +160,7 @@ export default function AboutPage() {
               market, you'll find a recipe. Whether you want to grill it, bake
               it, or steam it, we've got you covered.
             </p>
-            <p className="font-semibold text-gray-900">
+            <p className="font-semibold text-stone-900">
               We're not there yet, but we're scaling up every week.
             </p>
           </div>
@@ -159,10 +168,10 @@ export default function AboutPage() {
 
         {/* Current Status */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl font-bold text-stone-900 mb-6">
             Where We Are Now
           </h2>
-          <div className="prose prose-lg text-gray-700 space-y-4">
+          <div className="prose prose-lg text-stone-700 space-y-4">
             <p>
               As of January 2026, we have 30+ recipes covering 40+ fish types
               across 8 cooking methods. We're actively expanding the database
@@ -178,22 +187,22 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg p-8 text-center text-white">
+        <section className="bg-gradient-to-br from-orange-600 to-amber-700 rounded-xl p-8 text-center text-white">
           <h2 className="text-2xl font-bold mb-4">Ready to Cook Some Fish?</h2>
-          <p className="text-blue-100 mb-6">
+          <p className="text-orange-100 mb-6">
             Browse our growing collection of fish recipes and find exactly what
             you're looking for.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/recipes"
-              className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors shadow-lg"
+              className="px-8 py-4 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-colors shadow-lg"
             >
               Browse All Recipes
             </Link>
             <Link
               href="/faq"
-              className="px-8 py-4 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-900 transition-colors border-2 border-white"
+              className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg hover:bg-white/30 transition-colors border-2 border-white/40"
             >
               Read the FAQ
             </Link>
@@ -201,42 +210,7 @@ export default function AboutPage() {
         </section>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <div className="flex items-center gap-2 mb-2">
-                <div className="flex items-center gap-1">
-                  <span className="text-xl">🐟</span>
-                  <span className="text-xl">🔥</span>
-                </div>
-                <span className="text-white font-bold text-xl">
-                  cooked.fish
-                </span>
-              </div>
-              <p className="text-sm">The future of fish recipes online</p>
-            </div>
-            <div className="flex gap-6">
-              <Link
-                href="/recipes"
-                className="hover:text-white transition-colors"
-              >
-                Browse
-              </Link>
-              <Link href="/faq" className="hover:text-white transition-colors">
-                FAQ
-              </Link>
-              <Link href="/about" className="hover:text-white transition-colors">
-                About
-              </Link>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
-            © 2026 cooked.fish. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

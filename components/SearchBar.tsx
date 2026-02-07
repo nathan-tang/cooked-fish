@@ -31,10 +31,10 @@ export function SearchBar({
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder={placeholder}
-        className="w-full px-5 py-3 pl-12 text-base text-gray-900 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none transition-colors placeholder-gray-500"
+        className="w-full px-5 py-3 pl-12 text-base text-stone-900 border-2 border-stone-200 rounded-lg focus:border-orange-500 focus:outline-none transition-colors placeholder-stone-400"
       />
       <svg
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -49,7 +49,7 @@ export function SearchBar({
       {query && (
         <button
           onClick={() => setQuery("")}
-          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+          className="absolute right-4 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path

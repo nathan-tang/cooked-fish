@@ -50,19 +50,19 @@ export function FishTypeSelect({
 
   return (
     <div ref={containerRef} className="relative">
-      <label className="block text-sm font-medium text-gray-700 mb-1.5">
+      <label className="block text-sm font-medium text-stone-700 mb-1.5">
         Fish Type
       </label>
 
       {/* Display selected value or input */}
       {value ? (
         <div className="flex items-center gap-2">
-          <div className="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-white text-sm">
+          <div className="flex-1 px-3 py-2 border border-stone-300 rounded-md bg-white text-sm">
             {value}
           </div>
           <button
             onClick={handleClear}
-            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-md hover:bg-gray-50"
+            className="px-3 py-2 text-sm text-stone-600 hover:text-stone-800 border border-stone-300 rounded-md hover:bg-stone-50"
           >
             Clear
           </button>
@@ -78,10 +78,10 @@ export function FishTypeSelect({
             }}
             onFocus={() => setIsOpen(true)}
             placeholder="Search fish type..."
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none text-sm text-gray-900 placeholder-gray-500"
+            className="w-full px-3 py-2 border border-stone-300 rounded-md focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none text-sm text-stone-900 placeholder-stone-500"
           />
           <svg
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400 pointer-events-none"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -98,7 +98,7 @@ export function FishTypeSelect({
 
       {/* Dropdown */}
       {isOpen && !value && (
-        <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+        <div className="absolute z-50 w-full mt-1 bg-white border border-stone-300 rounded-md shadow-lg max-h-60 overflow-auto">
           {filteredFishTypes.length > 0 ? (
             <>
               <button
@@ -107,7 +107,7 @@ export function FishTypeSelect({
                   setIsOpen(false);
                   setSearchQuery("");
                 }}
-                className="w-full px-3 py-2 text-left text-sm hover:bg-blue-50 border-b border-gray-200 font-medium text-gray-600"
+                className="w-full px-3 py-2 text-left text-sm hover:bg-orange-50 border-b border-stone-200 font-medium text-stone-600"
               >
                 All Fish
               </button>
@@ -115,14 +115,14 @@ export function FishTypeSelect({
                 <button
                   key={fish}
                   onClick={() => handleSelect(fish)}
-                  className="w-full px-3 py-2 text-left text-sm hover:bg-blue-50 transition-colors"
+                  className="w-full px-3 py-2 text-left text-sm hover:bg-orange-50 transition-colors"
                 >
                   {fish}
                 </button>
               ))}
             </>
           ) : (
-            <div className="px-3 py-2 text-sm text-gray-500">
+            <div className="px-3 py-2 text-sm text-stone-500">
               No fish types found
             </div>
           )}
